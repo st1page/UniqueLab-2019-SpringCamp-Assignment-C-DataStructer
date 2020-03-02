@@ -10,8 +10,8 @@ typedef struct A{
 }A;
 char AMeta_c[] = {3, 0, 0, 0, 1, 0, 10};
 SFSVarchar *AMeta = (SFSVarchar *)AMeta_c;
-/*  .len = 5,
-    .buf = {1,4,0,10,0} */
+/*  AMeta->len = 3,
+    AMeta->buf = {1,0,10} */
 const uint32_t ArecordSize = sizeof(A);
 int main(){
 	SFSDatabase *db = sfsDatabaseCreate();
