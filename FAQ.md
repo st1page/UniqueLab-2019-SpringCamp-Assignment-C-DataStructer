@@ -31,8 +31,8 @@ int main(){
 	SFSDatabase *db = sfsDatabaseCreate();
 	SFSTable *table = sfsTableCreate(5 * ArecordSize, AMeta, db);
     A* record = sfsTableAddRecord(&table);// 在table中留出了一个record的位置 并返回它的指针 给你填空
-    A->x1_1 = 2; 
-    A->x2_v = sfsTableAddVarchar(&table, 4, "test"); // 在talbe里面 插入一个变长字符串 长度为4 内容为“test” 返回他的指针 把指针填到刚才A指向的结构里
+    record->x1_1 = 2; 
+    record->x2_v = sfsTableAddVarchar(&table, 4, "test"); // 在talbe里面 插入一个变长字符串 长度为4 内容为“test” 返回他的指针 把指针填到刚才A指向的结构里
     sfsDatabaseSave("file.sfs", db);
     return 0;
 }
