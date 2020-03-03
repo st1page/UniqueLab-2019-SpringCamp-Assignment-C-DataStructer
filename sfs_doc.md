@@ -3,6 +3,7 @@
 ## quick start
 
 ```C++
+#pragma pack(1)
 typedef struct A{
     int8_t x1_1;
     SFSVarchar *x2_v;

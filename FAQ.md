@@ -17,6 +17,7 @@ typedef struct A{
 所以使用了这个库 你就可以这么搞 重要过程写在注释里了
 
 ```cpp
+#pragma pack(1)
 typedef struct A{
     char x1_1;
     SFSVarchar *x2_v;
