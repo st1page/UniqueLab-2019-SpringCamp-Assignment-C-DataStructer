@@ -17,8 +17,8 @@ int main(){
 	SFSDatabase *db = sfsDatabaseCreate();
 	SFSTable *table = sfsTableCreate(5 * ArecordSize, AMeta, db);
     A* record = sfsTableAddRecord(&table);
-    A.x0_1 = 2;
-    A.x2_v = sfsTableAddVarchar(&table, 4, "test");
+    A->x0_1 = 2;
+    A->x2_v = sfsTableAddVarchar(&table, 4, "test");
     sfsDatabaseSave("file.sfs", db);
     return 0;
 }
