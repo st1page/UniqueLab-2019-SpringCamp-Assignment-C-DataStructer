@@ -4,7 +4,7 @@
 
 ```C++
 typedef struct A{
-    int8_t x0_1;
+    int8_t x1_1;
     SFSVarchar *x2_v;
     char x3_10[10];
 }A;
